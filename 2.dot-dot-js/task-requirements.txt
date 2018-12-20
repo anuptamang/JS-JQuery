@@ -1,0 +1,7 @@
+Every great dream begins with a dreamer. Always remember, you have within you the strength, 
+the patience, and the passion to reach for the stars to change the world.
+
+1) cut text after word 'passion' and add '...' at the end
+2) cut text after 100 symbol and add show more button, after click on button show whole text.
+ change text in button to show less or simple use + -, after click cut text again. 
+for short text doesn't show button
