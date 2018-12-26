@@ -1,0 +1,7 @@
+Every great dream begins with a dreamer. Always remember, you have within you the strength, 
+the patience, and the passion to reach for the stars to change the world.
+
+increase visible text length to 250 in 1st block and to 343 in second block
+
+use one js for both blocks, you can add options for length and buttons
+and use 3  tags in one block

@@ -65,6 +65,8 @@ function initdotDotScript() {
             p[0].innerText = dottedText;
             p.append(more);
             less.detach();
-		});
+        });
+        
+        console.log(more);
     });
 }

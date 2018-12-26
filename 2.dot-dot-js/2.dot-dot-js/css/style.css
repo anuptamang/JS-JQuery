@@ -1,0 +1,58 @@
+body {
+  padding: 20px;
+}
+
+.cols {
+  display: flex;
+  margin: 0 auto;
+  width: 800px;
+}
+
+.block {
+  width: 50%;
+  padding: 0 50px;
+}
+
+.link {
+  display: inline
+  margin: 0 0 0 4px;
+}
+
+.text-block2 .link {
+  /*display: none;*/
+}
+
+.text-block2.dots-active .link {
+  display: inline;
+}
+
+.text-block2 p {
+  display: inline;
+}
+
+.block p {
+  margin: 0;
+}
+
+a {
+	color: #0254EB
+}
+a:visited {
+	color: #0254EB
+}
+a.morelink {
+	text-decoration:none;
+	outline: none;
+}
+.morecontent span {
+	display: none;
+}
+.comment {
+	width: 400px;
+	background-color: #f0f0f0;
+	margin: 10px;
+}
+
+p br {
+  display: none;
+}
