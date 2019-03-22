@@ -1,0 +1,7 @@
+create slick carousel with custom thumbs
+simple slide carousel
+create thumbs in init callback
+each thumb should contain same image with main slide
+after click on thumb, main slides should switch
+that means don't use asfornav
+change active state for each active thumb

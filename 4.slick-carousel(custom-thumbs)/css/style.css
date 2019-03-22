@@ -1,0 +1,35 @@
+body {
+  padding: 20px;
+}
+
+img {
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+}
+
+.carousel-holder {
+  width: 600px;
+  margin: 0 auto;
+  text-align: center
+}
+
+.thumb-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+}
+
+.thumb-list li {
+  width: 25%;
+}
+
+.thumb-list img {
+  width: 100%;
+  height: auto;
+}
+
+.thumb-list .slick-active img {
+  opacity: 0.50;
+}

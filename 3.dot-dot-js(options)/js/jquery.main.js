@@ -7,15 +7,6 @@ function initdotDotScript() {
 	jQuery('.block').dotScript({
         limit: 250
     });
-
-    // jQuery('.text-block1').dotScript({
-    //     limit: 250
-    // });
-    
-    // jQuery('.text-block2').dotScript({
-    //     limit: 343,
-    //     hasBtn: true
-	// });
 }
 
 jQuery.fn.dotScript = function(opt) {
@@ -27,22 +18,16 @@ jQuery.fn.dotScript = function(opt) {
 
     return this.each(function() {
         var textBlock = jQuery(this),
-            textHtml = textBlock.find('p');
+            textHtml = textBlock.html();
             allText = textBlock.text(),
             n = allText.length,
-            more= $('<a class="more" href="#">more</a>'),
-            less= $('<a class="less" href="#">less</a>'),
-
-            textBlock.data('limit') ? options.limit = textBlock.data('limit') : options.limit = options.limit;
-
-            // if(textBlock.data('limit')) {
-            //     options.limit = textBlock.data('limit');
-            // } else {
-            //     options.limit = options.limit;
-            // }
+            more= jQuery('<a class="more" href="#">more</a>'),
+            less= jQuery('<a class="less" href="#">less</a>'),
 
             strCut = allText.substring(0, options.limit),
-            dottedText = strCut.concat('', options.dots)
+            dottedText = strCut.concat('', options.dots);
+
+        textBlock.data('limit') ? options.limit = textBlock.data('limit') : options.limit = options.limit;
 
         if(n > options.limit) {
             textBlock.html(dottedText);
@@ -52,12 +37,12 @@ jQuery.fn.dotScript = function(opt) {
             textBlock.append(more);
         }
 
-        textBlock.on('click','.more', function(e) {
+        textBlock.on('click','a.more', function(e) {
             e.preventDefault();
             showAll();
         });
 
-        textBlock.on('click','.less', function(e) {
+        textBlock.on('click','a.less', function(e) {
             e.preventDefault();
             showShort();
         });
